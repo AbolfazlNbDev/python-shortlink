@@ -1,114 +1,329 @@
-<!-- BANNER -->
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/5c1f3329-9ad7-4ea4-a1aa-f579b4c3db34" width="100%" alt="Shortlink Banner">
-</p>
-
-<h1 align="center" style="font-size:45px; font-weight:900;">
-🔥 Python ShortLink — AbolfazlNbDeV 🔥
-</h1>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Flask%20App-Python%203.10+-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Project-URL Shortener-purple?style=for-the-badge">
-</p>
-
-<h2 align="center" style="font-weight:700;">
-یک پروژه کوتاه‌کننده لینک که هر کسی ببیند عاشقش می‌شود ❤️⚡
-</h2>
-
-<br><br>
-
-<!-- INTRO -->
 <div align="center">
-  <p dir="rtl" style="font-size:18px; max-width:800px;">
-    این پروژه یک <strong>کوتاه‌کننده لینک فوق‌سریع، امن و هوشمند</strong> است که با فریمورک 
-    <strong>Flask</strong> ساخته شده و از کپچای اختصاصی، امنیت بالا، سرعت عالی و ساختار تمیز بهره می‌برد.
-    <br><br>
-    فقط کافیست اجراش کنی... و یک <strong>سرویس کوتاه‌کننده لینک حرفه‌ای</strong> خواهی داشت! 🤯🚀
-  </p>
+
+<h1>🚀 Python ShortLink</h1>
+
+<h3>Fast • Secure • Minimal URL Shortener</h3>
+
+<p>
+A lightweight URL shortener built with <b>Python</b> and <b>Flask</b>
+</p>
+
+<img src="https://img.shields.io/badge/python-3.10+-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/flask-web%20framework-black?style=for-the-badge">
+<img src="https://img.shields.io/badge/status-active-success?style=for-the-badge">
+<img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=for-the-badge">
+
 </div>
 
 <br>
 
-<!-- FEATURES -->
-<h2 dir="rtl">✨ قابلیت‌های شگفت‌انگیز</h2>
+<hr>
 
-<ul dir="rtl" style="font-size:17px;">
-  <li>🔗 تولید لینک کوتاه در کمتر از ۱ ثانیه</li>
-  <li>🛡️ سیستم کپچای اختصاصی برای جلوگیری از اسپم</li>
-  <li>⚙️ ساختار حرفه‌ای و تمیز (Clean Architecture)</li>
-  <li>💨 بسیار سبک، سریع و قابل توسعه</li>
-  <li>🌐 مناسب برای انواع دپلوی (VPS، Railway، Render، Heroku و…)</li>
-  <li>🔐 بدون هیچ اطلاعات حساس داخل سورس</li>
-</ul>
+<h2 dir="rtl">📌 معرفی پروژه</h2>
 
-<br>
-
-<!-- INSTALL -->
-<h2 dir="rtl">📦 نصب و اجرا</h2>
-
-<pre>
-<code>
-git clone https://github.com/AbolfazlNbDeV/python-shortlink
-cd python-shortlink
-pip install -r requirements.txt
-python app.py
-</code>
-</pre>
-
-<p dir="rtl">سپس از طریق آدرس زیر وارد شوید:</p>
-
-<pre>http://localhost:5000</pre>
-
-<br>
-
-<!-- STRUCTURE -->
-<h2 dir="rtl">📁 ساختار پروژه</h2>
-
-<pre>
-python-shortlink/
-│── app.py
-│── captcha.py
-│── config.py
-│── README.md
-</pre>
-
-<p dir="rtl">پوشه‌های <strong>templates</strong> و <strong>static</strong> را خودتان اضافه می‌کنید.</p>
-
-<br>
-
-<!-- REQUIREMENTS -->
-<h2 dir="rtl">⚙️ نیازمندی‌ها</h2>
-
-<ul dir="rtl">
-  <li>Python 3.10+</li>
-  <li>Flask</li>
-  <li>Pillow</li>
-</ul>
-
-<br>
-
-<!-- DEMO -->
-<h2 dir="rtl">🎨 دموی رابط کاربری</h2>
 <p dir="rtl">
-به‌زودی دموی گرافیکی کامل اضافه خواهد شد! (یا اگر خواستی همین الان برایت می‌سازم 😎)
+
+Python ShortLink یک سرویس ساده اما قدرتمند برای **کوتاه کردن لینک‌ها** است که با استفاده از فریم‌ورک Flask توسعه داده شده است.
+
+این پروژه برای افرادی مناسب است که می‌خواهند:
+
+• یک سرویس کوتاه‌کننده لینک شخصی داشته باشند  
+• نحوه ساخت URL Shortener با Flask را یاد بگیرند  
+• یک پروژه سبک برای Deploy روی سرور داشته باشند  
+
+ساختار پروژه ساده، قابل توسعه و مناسب برای استفاده در پروژه‌های واقعی است.
+
 </p>
 
-<br>
+<hr>
 
-<!-- CONTACT -->
-<h2 dir="rtl">📞 ارتباط با من</h2>
+<h2 dir="rtl">✨ قابلیت‌ها</h2>
 
 <ul dir="rtl">
-  <li>GitHub: <a href="https://github.com/AbolfazlNbDeV">@AbolfazlNbDeV</a></li>
+
+<li>🔗 تولید لینک کوتاه برای هر URL</li>
+
+<li>⚡ ریدایرکت سریع و بهینه</li>
+
+<li>🛡️ سیستم CAPTCHA برای جلوگیری از اسپم</li>
+
+<li>🔐 امنیت مناسب و جلوگیری از abuse</li>
+
+<li>📦 ساختار ماژولار و تمیز</li>
+
+<li>⚙️ تنظیمات جداگانه در فایل config</li>
+
+<li>🚀 مناسب برای Deploy روی VPS یا Cloud</li>
+
+<li>💡 قابل توسعه برای اضافه کردن پنل مدیریت</li>
+
 </ul>
+
+<hr>
+
+<h2 dir="rtl">🧠 نحوه کار سیستم</h2>
+
+<p dir="rtl">
+
+مراحل عملکرد سیستم به شکل زیر است:
+
+1️⃣ کاربر لینک اصلی را وارد می‌کند  
+2️⃣ سیستم یک شناسه کوتاه تولید می‌کند  
+3️⃣ لینک کوتاه در دیتابیس ذخیره می‌شود  
+4️⃣ هنگام باز کردن لینک کوتاه، کاربر به لینک اصلی ریدایرکت می‌شود  
+
+</p>
+
+<hr>
+
+<h2 dir="rtl">📂 ساختار پروژه</h2>
+
+<pre>
+
+python-shortlink
+│
+├── app.py
+├── config.py
+├── captcha.py
+├── README.md
+│
+├── templates/
+│
+└── static/
+
+</pre>
+
+<p dir="rtl">
+
+توضیح فایل‌ها:
+
+<b>app.py</b>  
+هسته اصلی برنامه Flask
+
+<b>config.py</b>  
+تنظیمات پروژه
+
+<b>captcha.py</b>  
+سیستم تولید کپچا
+
+</p>
+
+<hr>
+
+<h2 dir="rtl">⚙️ پیش‌نیازها</h2>
+
+<ul dir="rtl">
+
+<li>Python 3.10 یا جدیدتر</li>
+<li>pip</li>
+<li>Git</li>
+
+</ul>
+
+<hr>
+
+<h2 dir="rtl">📦 نصب پروژه</h2>
+
+<pre>
+git clone https://github.com/AbolfazlNbDeV/python-shortlink
+
+cd python-shortlink
+</pre>
+
+ساخت محیط مجازی:
+
+<pre>
+python -m venv venv
+</pre>
+
+فعال‌سازی:
+
+Linux / Mac
+
+<pre>
+source venv/bin/activate
+</pre>
+
+Windows
+
+<pre>
+venv\Scripts\activate
+</pre>
+
+نصب کتابخانه‌ها:
+
+<pre>
+pip install -r requirements.txt
+</pre>
+
+اجرای پروژه:
+
+<pre>
+python app.py
+</pre>
+
+سپس در مرورگر:
+
+<pre>
+http://localhost:5000
+</pre>
+
+<hr>
+
+<h2 dir="rtl">📜 فایل requirements.txt</h2>
+
+این فایل را در پروژه قرار بده:
+
+<pre>
+
+Flask
+Pillow
+Werkzeug
+itsdangerous
+Jinja2
+
+</pre>
+
+در صورت نیاز می‌توانی اضافه کنی:
+
+<pre>
+
+gunicorn
+python-dotenv
+
+</pre>
+
+<hr>
+
+<h2 dir="rtl">🚀 دیپلوی پروژه</h2>
+
+<h3>Deploy روی VPS</h3>
+
+نصب Python:
+
+<pre>
+sudo apt install python3
+</pre>
+
+کلون پروژه:
+
+<pre>
+git clone https://github.com/AbolfazlNbDeV/python-shortlink
+</pre>
+
+نصب وابستگی‌ها:
+
+<pre>
+pip install -r requirements.txt
+</pre>
+
+اجرای پروژه:
+
+<pre>
+python app.py
+</pre>
+
+برای اجرای دائمی بهتر است از:
+
+<pre>
+gunicorn
+</pre>
+
+استفاده شود.
+
+<hr>
+
+<h3>Deploy با Gunicorn</h3>
+
+<pre>
+pip install gunicorn
+</pre>
+
+اجرای سرور:
+
+<pre>
+gunicorn app:app
+</pre>
+
+<hr>
+
+<h3>Deploy روی Render</h3>
+
+1️⃣ پروژه را در GitHub قرار بده  
+2️⃣ وارد Render شو  
+3️⃣ New Web Service بزن  
+4️⃣ ریپازیتوری را انتخاب کن  
+
+Build Command:
+
+<pre>
+pip install -r requirements.txt
+</pre>
+
+Start Command:
+
+<pre>
+gunicorn app:app
+</pre>
+
+<hr>
+
+<h3>Deploy روی Railway</h3>
+
+1️⃣ پروژه را Push کن در GitHub  
+2️⃣ Railway را باز کن  
+3️⃣ Deploy from GitHub  
+4️⃣ repository را انتخاب کن  
+
+<hr>
+
+<h2 dir="rtl">🔐 امنیت</h2>
+
+<ul dir="rtl">
+
+<li>اطلاعات حساس در سورس قرار نگرفته است</li>
+
+<li>تنظیمات قابل مدیریت در config.py هستند</li>
+
+<li>برای امنیت بیشتر می‌توان environment variable اضافه کرد</li>
+
+</ul>
+
+<hr>
+
+<h2 dir="rtl">💡 ایده برای توسعه پروژه</h2>
+
+<ul dir="rtl">
+
+<li>پنل مدیریت</li>
+
+<li>آمار کلیک لینک</li>
+
+<li>API کوتاه‌کننده لینک</li>
+
+<li>سیستم کاربران</li>
+
+<li>QR Code برای لینک‌ها</li>
+
+</ul>
+
+<hr>
+
+<div align="center">
+
+<h2>⭐ Support</h2>
+
+اگر این پروژه برایت مفید بود  
+یک ⭐ به ریپازیتوری بده
 
 <br><br>
 
-<!-- FOOTER -->
-<p align="center" dir="rtl" style="font-size:20px;">
-اگر خوشت اومد، یک ⭐ روی ریپازیتوری بزار که حمایت بشیم!  
-<br>  
-مرسی که این پروژه رو دیدی ❤️🔥
-</p>
+<b>GitHub</b>
+
+<br>
+
+<a href="https://github.com/AbolfazlNbDeV">
+AbolfazlNbDeV
+</a>
+
+</div>
