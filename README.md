@@ -1,84 +1,98 @@
+<h1 align="center">
+  <font color="#E63946">🔴 PYTHON SHORTLINK 🔴</font>
+</h1>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Flask-Web%20App-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
+  <strong>🔥 A Blazing Fast, Enterprise-Ready URL Shortener Built for Speed & Security 🔥</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/stargazers">
-    <img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=for-the-badge&logo=github&logoColor=white" alt="Stars">
-  </a>
-  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/network/members">
-    <img src="https://img.shields.io/github/forks/AbolfazlNbDeV/python-shortlink?style=for-the-badge&logo=github&logoColor=white" alt="Forks">
-  </a>
-  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/issues">
-    <img src="https://img.shields.io/github/issues/AbolfazlNbDeV/python-shortlink?style=for-the-badge&logo=github&logoColor=white" alt="Issues">
-  </a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python_3.8+-E63946.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask_Backend-111111.svg?style=for-the-badge&logo=flask&logoColor=E63946" alt="Flask"></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite_DB-E63946.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Status-Highly_Active-111111.svg?style=for-the-badge&logo=fire&logoColor=E63946" alt="Status"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-E63946.svg?style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/stargazers"><img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=social" alt="Stars"></a>
 </p>
 
-<h1 align="center">Python ShortLink</h1>
-<p align="center">A clean, fast, and lightweight URL shortener built with Flask and SQLite.</p>
+<br>
+
+<blockquote align="center">
+  <p>سیستم مدیریت لینک قدرتمند، مجهز به پنل ادمین، احراز هویت دو مرحله‌ای و تحلیل دقیق کلیک‌ها. طراحی شده برای پایداری در ترافیک بالا.</p>
+</blockquote>
 
 ---
 
-<p align="center">
-  <b>یک کوتاه‌کننده لینک سبک، سریع و قابل توسعه با Flask و SQLite</b>
-</p>
-
-## 📌 معرفی پروژه
-
-این پروژه یک **URL Shortener** حرفه‌ای و سبک است که با **Python / Flask** ساخته شده و از **SQLite** برای ذخیره‌سازی داده‌ها استفاده می‌کند.  
-هدف پروژه، ایجاد یک ابزار ساده و سریع برای کوتاه‌سازی لینک‌ها، مدیریت URLها و ارائه‌ی تجربه‌ای تمیز و قابل‌اعتماد است.
-
----
-
-## 🚀 دسترسی سریع
-
-- [ویژگی‌های کلیدی](#-ویژگی‌های-کلیدی)
-- [معماری و جریان داده](#-معماری-و-جریان-داده)
-- [نصب و راه‌اندازی](#-نصب-و-راه‌اندازی)
-- [تنظیمات امنیتی](#-تنظیمات-امنیتی)
-- [مستندات API](#-مستندات-api)
-- [استقرار در محیط Production](#-استقرار-در-محیط-production)
-- [ساختار فایل‌ها](#-ساختار-فایل‌ها)
+## 📑 فهرست دسترسی سریع
+- [🩸 ویژگی‌های کلیدی](#-ویژگیهای-کلیدی)
+- [🧠 معماری و جریان داده](#-معماری-و-جریان-داده)
+- [🚀 نصب و راه‌اندازی](#-نصب-و-راهاندازی)
+- [🛑 تنظیمات امنیتی](#-تنظیمات-امنیتی-و-پیکربندی)
+- [📡 مستندات API](#-مستندات-api)
+- [📦 دیپلوی در پروداکشن](#-دیپلوی-در-پروداکشن)
 
 ---
 
-## ✨ ویژگی‌های کلیدی
+## 🩸 ویژگی‌های کلیدی
 
-- 🔴 کوتاه‌سازی سریع لینک‌ها
-- 🔴 مدیریت و ذخیره‌سازی لینک‌ها با SQLite
-- 🔴 رابط ساده و سبک
-- 🔴 ساختار مناسب برای توسعه و سفارشی‌سازی
-- 🔴 مناسب برای اجرا در محیط توسعه و production
+- 🔴 موتور تولید لینک فوق سریع: استفاده از الگوریتم‌های بهینه‌سازی شده برای جلوگیری از تداخل (Collision).
+- 🔴 امنیت سطح Enterprise: محافظت در برابر حملات Brute-Force، مجهز به Captcha سفارشی و سیستم Session Management.
+- 🔴 پنل مدیریت پیشرفته: مانیتورینگ لحظه‌ای لینک‌ها، کاربران و منابع سیستم.
+- 🔴 سیستم تیکتینگ یکپارچه: پلتفرم پشتیبانی داخلی برای ارتباط مستقیم کاربران و ادمین.
+- 🔴 ردیابی و آنالیتیکس: شمارشگر دقیق کلیک‌ها با قابلیت تشخیص IP و User-Agent.
 
 ---
 
 ## 🧠 معماری و جریان داده
-```text
-+------------------+
-|   User / Client  |
-+--------+---------+
-|
-v
-+------------------+
-|   Flask Routes   |
-|  (Request Layer) |
-+--------+---------+
-|
-v
-+------------------+
-|   App Logic      |
-| Validation / Map |
-+--------+---------+
-|
-v
-+------------------+
-|   SQLite DB      |
-|  URL Storage     |
-+------------------+
 
-Flow:
-User -> Flask Route -> Validation -> Database -> Short Link Response
+برای درک بهتر نحوه کارکرد بک‌اند، ساختار پردازش درخواست‌ها به شکل زیر مهندسی شده است (بدون نیاز به لود تصاویر خارجی):
+
+
+ ┌──────────────┐           1. POST /shorten            ┌──────────────────┐
+ │              ├────────────────────────────────────────▶│                  │
+ │ Client/User  │                                         │  Flask App Core  │
+ │              │◀────────────────────────────────────────┤                  │
+ └──────┬───────┘          2. Returns: short.id         └────────┬─────────┘
+│                                                          │
+│                  3. GET /short.id                      │ (Read/Write)
+└──────────────────────────────────────────────────────────┤
+▼
+ ┌──────────────┐          5. HTTP 302 Redirect         ┌──────────────────┐
+ │ Target URL   │◀────────────────────────────────────────┤   SQLite DB      │
+ └──────────────┘                                         └──────────────────┘
+
+---
+
+## 🚀 نصب و راه‌اندازی
+
+برای اجرای این سیستم در محیط لوکال خود، به پایتون `3.8` یا بالاتر نیاز دارید.
+
+۱. کلون کردن مخزن:
+bash
+git clone https://github.com/AbolfazlNbDeV/python-shortlink.git
+cd python-shortlink
+
+۲. ساخت و فعال‌سازی محیط ایزوله (Virtualenv):
+bash
+python -m venv .venv
+source .venv/bin/activate  # In Windows use: .venv\Scripts\activate
+
+۳. نصب وابستگی‌های هسته:
+bash
+pip install --upgrade pip
+pip install -r requirements.txt
+
+---
+
+## 🛑 تنظیمات امنیتی و پیکربندی
+
+⚠️ هشدار: پیش از اجرای پروژه، حتماً کلیدهای امنیتی را تغییر دهید! 
+
+فایل `config.py` را باز کرده و مقادیر زیر را به دقت تنظیم کنید:
+
+python
+# ----------------------------------
+# 🔴 CORE SECURITY SETTINGS 🔴
+# ----------------------------------
+DOMAIN = "http://127.0.0.1:8000"
+SECRETKEY = "CHANGETHISTOAVERYLONGRANDOMSTRING"
