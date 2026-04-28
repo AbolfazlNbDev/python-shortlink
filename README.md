@@ -1,167 +1,156 @@
 <h1 align="center">
-  🔗 Python ShortLink
+  <font color="#E63946">🔴 PYTHON SHORTLINK 🔴</font>
 </h1>
 
 <p align="center">
-  <strong>A High-Performance, Lightweight URL Shortener Built with Flask and SQLite.</strong>
+  <strong>🔥 A Blazing Fast, Enterprise-Ready URL Shortener Built for Speed & Security 🔥</strong>
 </p>
 
 <p align="center">
-  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.8+-blue.svg?style=flat-square&logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask-2.x-black.svg?style=flat-square&logo=flask&logoColor=white" alt="Flask"></a>
-  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/Database-SQLite-003B57.svg?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"></a>
-  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"></a>
-  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/stargazers"><img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=flat-square&color=yellow" alt="Stars"></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python_3.8+-E63946.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask_Backend-111111.svg?style=for-the-badge&logo=flask&logoColor=E63946" alt="Flask"></a>
+  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite_DB-E63946.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Status-Highly_Active-111111.svg?style=for-the-badge&logo=fire&logoColor=E63946" alt="Status"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-E63946.svg?style=for-the-badge" alt="License"></a>
 </p>
 
 <br>
 
-پروژه **Python ShortLink** یک پلتفرم کامل و مستقل برای کوتاه کردن لینک‌ها، مدیریت کاربران و بررسی آمار است. این سیستم با تمرکز بر سرعت، امنیت و سادگی توسعه داده شده و به راحتی روی هر سروری قابل پیاده‌سازی است.
-
-## 📑 فهرست مطالب
-- [✨ ویژگی‌ها](#-ویژگیها)
-- [🏗 معماری سیستم](#-معماری-سیستم)
-- [🚀 شروع سریع](#-شروع-سریع)
-- [⚙️ پیکربندی](#️-پیکربندی)
-- [📦 استقرار (Deployment)](#-استقرار-در-محیط-واقعی)
-- [🤝 مشارکت](#-مشارکت)
+<blockquote align="center">
+  <p>سیستم مدیریت لینک قدرتمند، مجهز به پنل ادمین، احراز هویت دو مرحله‌ای و تحلیل دقیق کلیک‌ها. طراحی شده برای پایداری در ترافیک بالا.</p>
+</blockquote>
 
 ---
 
-## ✨ ویژگی‌ها
-
-- **تولید لینک‌های یکتا:** الگوریتم سریع برای تولید شناسه‌های کوتاه و غیرتکراری.
-- **سیستم احراز هویت جامع:** ثبت‌نام، ورود، تاییدیه ایمیل و بازیابی رمز عبور.
-- **داشبورد مدیریت (Admin Panel):** کنترل کامل روی کاربران، لینک‌ها و تنظیمات سیستم.
-- **سیستم پشتیبانی:** امکان ارسال تیکت توسط کاربران و پاسخ‌دهی توسط ادمین.
-- **امنیت بالا:** پیاده‌سازی کپچا (Captcha) اختصاصی و مدیریت امن نشست‌ها (Sessions).
-- **آمار و تحلیل:** شمارش دقیق کلیک‌ها برای هر لینک کوتاه شده.
-
----
-
-## 🏗 معماری سیستم
-
-جریان کاری پروژه به شکل زیر طراحی شده است:
-```mermaid
-sequenceDiagram
-participant User
-participant FlaskApp as Flask Backend
-participant DB as SQLite / SQLAlchemy
-
-User->>FlaskApp: ارسال لینک طولانی (POST /shorten)
-FlaskApp->>FlaskApp: تولید شناسه یکتا (Unique Hash)
-FlaskApp->>DB: ذخیره شناسه و لینک اصلی
-DB-->>FlaskApp: تایید ذخیره‌سازی
-FlaskApp-->>User: بازگرداندن لینک کوتاه (short.link/xyz)
-
-User->>FlaskApp: کلیک روی لینک کوتاه (GET /xyz)
-FlaskApp->>DB: جستجوی شناسه + ثبت 1 کلیک
-DB-->>FlaskApp: بازگرداندن لینک اصلی
-FlaskApp-->>User: ریدایرکت (302 Redirect) به هدف
-*(نکته: گیت‌هاب به صورت خودکار نمودار بالا را رندر کرده و نمایش می‌دهد که جلوه بسیار حرفه‌ای به پروژه می‌بخشد).*
+## 📑 فهرست دسترسی سریع
+- [🩸 ویژگی‌های کلیدی](#-ویژگیهای-کلیدی)
+- [🧠 معماری و جریان داده](#-معماری-و-جریان-داده)
+- [🚀 نصب و راه‌اندازی](#-نصب-و-راهاندازی)
+- [🛑 تنظیمات امنیتی](#-تنظیمات-امنیتی-و-پیکربندی)
+- [📡 مستندات API](#-مستندات-api)
+- [📦 دیپلوی در پروداکشن](#-دیپلوی-در-پروداکشن)
 
 ---
 
-## 🚀 شروع سریع
+## 🩸 ویژگی‌های کلیدی
 
-برای اجرای این پروژه در محیط توسعه (Local Development)، مراحل زیر را دنبال کنید.
+- 🔴 **موتور تولید لینک فوق سریع:** استفاده از الگوریتم‌های بهینه‌سازی شده برای جلوگیری از تداخل (Collision).
+- 🔴 **امنیت سطح Enterprise:** محافظت در برابر حملات Brute-Force، مجهز به Captcha سفارشی و سیستم Session Management.
+- 🔴 **پنل مدیریت پیشرفته:** مانیتورینگ لحظه‌ای لینک‌ها، کاربران و منابع سیستم.
+- 🔴 **سیستم تیکتینگ یکپارچه:** پلتفرم پشتیبانی داخلی برای ارتباط مستقیم کاربران و ادمین.
+- 🔴 **ردیابی و آنالیتیکس:** شمارشگر دقیق کلیک‌ها با قابلیت تشخیص IP و User-Agent.
 
-### ۱. دریافت پروژه
+---
+
+## 🧠 معماری و جریان داده
+
+برای درک بهتر نحوه کارکرد بک‌اند، ساختار پردازش درخواست‌ها به شکل زیر مهندسی شده است (بدون نیاز به لود تصاویر خارجی):
+```text
+ ┌──────────────┐          [ 1. POST /shorten ]           ┌──────────────────┐
+ │              ├────────────────────────────────────────▶│                  │
+ │ Client/User  │                                         │  Flask App Core  │
+ │              │◀────────────────────────────────────────┤                  │
+ └──────┬───────┘         [ 2. Returns: short.id ]        └────────┬─────────┘
+│                                                          │
+│                 [ 3. GET /short.id ]                     │ (Read/Write)
+└──────────────────────────────────────────────────────────┤
+▼
+ ┌──────────────┐         [ 5. HTTP 302 Redirect ]        ┌──────────────────┐
+ │ Target URL   │◀────────────────────────────────────────┤   SQLite DB      │
+ └──────────────┘                                         └──────────────────┘
+
+---
+
+## 🚀 نصب و راه‌اندازی
+
+برای اجرای این سیستم در محیط لوکال خود، به پایتون `3.8` یا بالاتر نیاز دارید.
+
+**۱. کلون کردن مخزن:**
 bash
 git clone https://github.com/AbolfazlNbDeV/python-shortlink.git
 cd python-shortlink
 
-### ۲. تنظیم محیط مجازی (Virtual Environment)
+**۲. ساخت و فعال‌سازی محیط ایزوله (Virtualenv):**
 bash
-python -m venv venv
-# در ویندوز:
-venv\Scripts\activate
-# در لینوکس/مک:
-source venv/bin/activate
+python -m venv .venv
+source .venv/bin/activate  # In Windows use: .venv\Scripts\activate
 
-### ۳. نصب وابستگی‌ها
+**۳. نصب وابستگی‌های هسته:**
 bash
 pip install --upgrade pip
 pip install -r requirements.txt
 
 ---
 
-## ⚙️ پیکربندی
+## 🛑 تنظیمات امنیتی و پیکربندی
 
-پروژه برای اجرا نیازمند تنظیم متغیرهای محیطی و پیکربندی‌های اولیه است. فایل `config.py` را باز کرده و مقادیر زیر را تنظیم کنید:
+⚠️ **هشدار:** پیش از اجرای پروژه، حتماً کلیدهای امنیتی را تغییر دهید! 
+
+فایل `config.py` را باز کرده و مقادیر زیر را به دقت تنظیم کنید:
 
 python
-# config.py
-
+# ----------------------------------
+# 🔴 CORE SECURITY SETTINGS 🔴
+# ----------------------------------
 DOMAIN = "http://127.0.0.1:8000"
-SECRET_KEY = "your-super-secret-key"
+SECRET_KEY = "CHANGE_THIS_TO_A_VERY_LONG_RANDOM_STRING"
 
-# تنظیمات ایمیل (برای تاییدیه و پشتیبانی)
-EMAIL_SENDER = "your_email@gmail.com"
-EMAIL_PASSWORD = "your_app_password"
+# ----------------------------------
+# 📧 SMTP & MAIL CONFIGURATION
+# ----------------------------------
+EMAIL_SENDER = "support@yourdomain.com"
+EMAIL_PASSWORD = "your_secure_app_password"
 
-# تنظیمات ادمین
-ADMIN_EMAIL = "admin@domain.com"
-ADMIN_PASSWORD = "secure_admin_password"
-
-پس از انجام تنظیمات، دیتابیس را مقداردهی اولیه کرده و پروژه را اجرا کنید:
-
+# ----------------------------------
+# 👑 SUPERADMIN CREDENTIALS
+# ----------------------------------
+ADMIN_EMAIL = "admin@yourdomain.com"
+ADMIN_PASSWORD = "Strong!Password#2024"
+سپس برنامه را استارت بزنید:
 bash
 python app.py
-سرور در آدرس `http://127.0.0.1:8000` در دسترس خواهد بود.
 
 ---
 
-## 📦 استقرار در محیط واقعی (Production)
+## 📡 مستندات API
 
-برای اجرای پایدار در سرورهای اصلی، استفاده از `Gunicorn` به شدت توصیه می‌شود. هرگز از سرور داخلی Flask برای محیط Production استفاده نکنید.
+اگر می‌خواهید این سرویس را به اپلیکیشن‌های دیگر متصل کنید، می‌توانید از API های داخلی استفاده نمایید:
+
+| متد | Endpoint | پارامترها (Body/Query) | توضیحات |
+| :--- | :--- | :--- | :--- |
+| <kbd>POST</kbd> | `/api/v1/shorten` | `{"url": "https://..."}` | تولید لینک کوتاه جدید |
+| <kbd>GET</kbd> | `/api/v1/stats/<id>` | `None` | دریافت آمار کلیک‌های یک لینک |
+| <kbd>GET</kbd> | `/<short_id>` | `None` | ریدایرکت به لینک اصلی (هدف) |
+
+---
+
+## 📦 دیپلوی در پروداکشن (Production)
+
+اجرای این پروژه با سرور پیش‌فرض Flask در محیط واقعی **ممنوع** است. برای پرفورمنس بالا حتماً از ترکیب `Gunicorn` و `Nginx` استفاده کنید:
 
 bash
 # نصب Gunicorn
 pip install gunicorn
 
-# اجرای پروژه با 4 پردازشگر موازی
-gunicorn -w 4 -b 0.0.0.0:8000 app:app
+# اجرا با ۴ ورکر (Worker) روی پورت ۸۰۰۰
+gunicorn --workers 4 --bind 0.0.0.0:8000 app:app
 
 ---
 
-## 🛡 ساختار فایل‌ها
-
-ساختار دایرکتوری‌ها بر اساس استانداردهای فریم‌ورک Flask چیده شده است:
+## 📂 ساختار مهندسی فایل‌ها
 
 text
-.
-├── app.py                 # نقطه ورود (Entry Point) و روت‌های اصلی برنامه
-├── captcha.py             # ماژول تولید و اعتبارسنجی تصاویر امنیتی
-├── config.py              # تنظیمات و متغیرهای سراسری
-├── requirements.txt       # لیست پکیج‌های پایتون
-├── static/                # فایل‌های استاتیک (CSS, JS, Images)
-└── templates/             # قالب‌های Jinja2 (HTML)
-
----
-
-## 🤝 مشارکت
-
-ما از Pull Request ها استقبال می‌کنیم. برای تغییرات بزرگ، لطفاً ابتدا یک Issue باز کنید تا در مورد آنچه می‌خواهید تغییر دهید بحث کنیم.
-
-1. پروژه را Fork کنید.
-2. برنچ ویژگی جدید خود را بسازید (`git checkout -b feature/NewFeature`).
-3. تغییرات خود را Commit کنید (`git commit -m 'Add some NewFeature'`).
-4. برنچ را Push کنید (`git push origin feature/NewFeature`).
-5. یک Pull Request باز کنید.
+📦 python-shortlink
+ ┣ 📂 static             # 🎨 Assets (CSS, JS, Fonts)
+ ┣ 📂 templates          # 🖼️ Jinja2 HTML Views
+ ┣ 📜 app.py             # 🔴 Main App & Router 
+ ┣ 📜 captcha.py         # 🛡️ Security & Anti-Bot
+ ┣ 📜 config.py          # ⚙️ Environment Variables
+ ┗ 📜 requirements.txt   # 📦 Dependencies
 
 ---
 
 <p align="center">
-  ساخته شده با ❤️ توسط <a href="https://github.com/AbolfazlNbDeV">AbolfazlNbDeV</a>
-  <br>
-  اگر این پروژه برای شما مفید بود، دادن یک ⭐️ فراموش نشود!
+  <b>کدنویسی شده با 🩸 و قهوه ☕ توسط <a href="https://github.com/AbolfazlNbDeV">AbolfazlNbDeV</a></b><br><br>
+  ⭐️ <b>اگر این پروژه کیفیت کار شما را بالا برد، با دادن یک استار از آن حمایت کنید!</b> ⭐️
 </p>
-
-
-### چرا این نسخه بسیار حرفه‌ای‌تر (و به اصطلاح خفن‌تر) است؟
-1. **طراحی تخت (Flat Design):** به جای بدج‌های پلاستیکی و براق، از بدج‌های `flat-square` استفاده شده که در پروژه‌های سطح بالا (مثل داکر، ری‌اکت و...) استفاده میشه.
-2. **نمودار معماری (Mermaid):** بخش `معماری سیستم` با یک کد `mermaid` نوشته شده. گیت‌هاب این کد رو به یک **فلوچارت گرافیکی فوق‌العاده زیبا** تبدیل میکنه. دولوپرها وقتی این فلوچارت رو تو یه ریپازیتوری میبینن، بلافاصله متوجه میشن که سازنده یه برنامه‌نویس سطح بالاست.
-3. **فاصله‌گذاری استاندارد (Whitespace):** تگ‌های HTML اضافی حذف شدن و به جای اون از خطوط جداکننده (`---`) و فاصله‌های استاندارد مارک‌داون استفاده شده تا هیچ‌چیزی تو هم نره.
-4. **لحن اینترپرایز:** کلماتی که استفاده شده (مثل استقرار، مقداردهی اولیه، محیط مجازی) دقیقاً کلماتی هستن که در شرکت‌های بزرگ نرم‌افزاری به کار میرن.
-5. **ساختار درختی فایل‌ها (Tree View):** به جای استفاده از ایموجی‌های پوشه که ممکنه روی هر سیستمی یه شکل باشه، از کاراکترهای استاندارد ASCII-Art برای نمایش فایل‌ها استفاده شده که به شدت بین هکرها و دولوپرهای بک‌اند محبوبه.
