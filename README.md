@@ -1,49 +1,51 @@
-<h1 align="center">🚀 Python ShortLink Generator</h1>
-<h3 align="center">ساخته شده توسط AbolfazlNbDeV</h3>
+<!-- BANNER -->
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/5c1f3329-9ad7-4ea4-a1aa-f579b4c3db34" width="100%" alt="Shortlink Banner">
+</p>
+
+<h1 align="center" style="font-size:45px; font-weight:900;">
+🔥 Python ShortLink — AbolfazlNbDeV 🔥
+</h1>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Python-3.10+-blue">
-    <img src="https://img.shields.io/badge/Flask-Framework-orange">
-    <img src="https://img.shields.io/badge/Status-Active-success">
-    <img src="https://img.shields.io/badge/Project-URL Shortener-purple">
+  <img src="https://img.shields.io/badge/Flask%20App-Python%203.10+-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Project-URL Shortener-purple?style=for-the-badge">
 </p>
 
-<hr>
+<h2 align="center" style="font-weight:700;">
+یک پروژه کوتاه‌کننده لینک که هر کسی ببیند عاشقش می‌شود ❤️⚡
+</h2>
 
-<p dir="rtl">
-این یک پروژهٔ <strong>کوتاه‌کننده لینک حرفه‌ای</strong> است که با <strong>Python</strong> و <strong>Flask</strong> ساخته شده است و امکان تولید لینک‌های کوتاه، مدیریت دقیق ریدایرکت‌ها، سیستم کپچا و امنیت بالا را فراهم می‌کند.
+<br><br>
+
+<!-- INTRO -->
+<div align="center">
+  <p dir="rtl" style="font-size:18px; max-width:800px;">
+    این پروژه یک <strong>کوتاه‌کننده لینک فوق‌سریع، امن و هوشمند</strong> است که با فریمورک 
+    <strong>Flask</strong> ساخته شده و از کپچای اختصاصی، امنیت بالا، سرعت عالی و ساختار تمیز بهره می‌برد.
+    <br><br>
+    فقط کافیست اجراش کنی... و یک <strong>سرویس کوتاه‌کننده لینک حرفه‌ای</strong> خواهی داشت! 🤯🚀
+  </p>
+</div>
+
 <br>
-فقط کافیست سورس را اجرا کنید—بدون هیچ اطلاعات حساس—و آمادهٔ استفاده است! ❤️
-</p>
 
-<hr>
+<!-- FEATURES -->
+<h2 dir="rtl">✨ قابلیت‌های شگفت‌انگیز</h2>
 
-<h2 dir="rtl">✨ قابلیت‌ها</h2>
-<ul dir="rtl">
-    <li>🔗 ساخت لینک کوتاه با سرعت بسیار بالا</li>
-    <li>🔐 سیستم کپچا اختصاصی برای جلوگیری از اسپم</li>
-    <li>🛡️ امنیت بالا و بدون ذخیره‌سازی اطلاعات حساس</li>
-    <li>📁 معماری تمیز شامل:
-        <ul>
-            <li>app.py — هسته پروژه</li>
-            <li>captcha.py — ماژول تولید کپچا</li>
-            <li>config.py — تنظیمات اصلی</li>
-        </ul>
-    </li>
-    <li>⚡ بسیار سبک، سریع و قابل توسعه</li>
-    <li>🌐 مناسب برای دپلوی روی:
-        <ul>
-            <li>VPS</li>
-            <li>Railway</li>
-            <li>Render</li>
-            <li>Heroku</li>
-            <li>GitHub Codespaces</li>
-        </ul>
-    </li>
+<ul dir="rtl" style="font-size:17px;">
+  <li>🔗 تولید لینک کوتاه در کمتر از ۱ ثانیه</li>
+  <li>🛡️ سیستم کپچای اختصاصی برای جلوگیری از اسپم</li>
+  <li>⚙️ ساختار حرفه‌ای و تمیز (Clean Architecture)</li>
+  <li>💨 بسیار سبک، سریع و قابل توسعه</li>
+  <li>🌐 مناسب برای انواع دپلوی (VPS، Railway، Render، Heroku و…)</li>
+  <li>🔐 بدون هیچ اطلاعات حساس داخل سورس</li>
 </ul>
 
-<hr>
+<br>
 
+<!-- INSTALL -->
 <h2 dir="rtl">📦 نصب و اجرا</h2>
 
 <pre>
@@ -55,15 +57,14 @@ python app.py
 </code>
 </pre>
 
-<p dir="rtl">پروژه روی پورت 5000 اجرا می‌شود:</p>
+<p dir="rtl">سپس از طریق آدرس زیر وارد شوید:</p>
 
-<pre>
-http://localhost:5000
-</pre>
+<pre>http://localhost:5000</pre>
 
-<hr>
+<br>
 
-<h2 dir="rtl">📁 ساختار فایل‌ها</h2>
+<!-- STRUCTURE -->
+<h2 dir="rtl">📁 ساختار پروژه</h2>
 
 <pre>
 python-shortlink/
@@ -73,46 +74,41 @@ python-shortlink/
 │── README.md
 </pre>
 
-<p dir="rtl">پوشه‌های <strong>templates</strong> و <strong>static</strong> نیز باید در کنار این‌ها قرار بگیرند (توسط کاربر ساخته می‌شود).</p>
+<p dir="rtl">پوشه‌های <strong>templates</strong> و <strong>static</strong> را خودتان اضافه می‌کنید.</p>
 
-<hr>
+<br>
 
+<!-- REQUIREMENTS -->
 <h2 dir="rtl">⚙️ نیازمندی‌ها</h2>
 
 <ul dir="rtl">
-    <li>Python 3.10+</li>
-    <li>Flask</li>
-    <li>Pillow</li>
-    <li>secrets (داخلی)</li>
+  <li>Python 3.10+</li>
+  <li>Flask</li>
+  <li>Pillow</li>
 </ul>
 
-<hr>
+<br>
 
-<h2 dir="rtl">🧠 نکات امنیتی</h2>
-<ul dir="rtl">
-    <li>هیچ اطلاعات حساسی در سورس قرار ندارد.</li>
-    <li>Secret Key باید در فایل config.py قرار گیرد.</li>
-    <li>می‌توانید برای دپلوی، ENV ها اضافه کنید.</li>
-</ul>
+<!-- DEMO -->
+<h2 dir="rtl">🎨 دموی رابط کاربری</h2>
+<p dir="rtl">
+به‌زودی دموی گرافیکی کامل اضافه خواهد شد! (یا اگر خواستی همین الان برایت می‌سازم 😎)
+</p>
 
-<hr>
+<br>
 
-<h2 dir="rtl">📸 دموی رابط کاربری</h2>
-
-<p dir="rtl">به علت نبودن فایل‌های گرافیکی، دموی پیش‌فرض نمایش داده نمی‌شود. اما ساختار قالب‌ها آماده و قابل تکمیل است.</p>
-
-<hr>
-
+<!-- CONTACT -->
 <h2 dir="rtl">📞 ارتباط با من</h2>
 
 <ul dir="rtl">
-    <li>GitHub: <a href="https://github.com/AbolfazlNbDeV">@AbolfazlNbDeV</a></li>
+  <li>GitHub: <a href="https://github.com/AbolfazlNbDeV">@AbolfazlNbDeV</a></li>
 </ul>
 
-<hr>
+<br><br>
 
-<h2 dir="rtl">⭐ اگر پروژه را دوست داشتی…</h2>
-
-<p dir="rtl">
-با یک ⭐ ستاره از ریپازیتوری حمایت کن!
+<!-- FOOTER -->
+<p align="center" dir="rtl" style="font-size:20px;">
+اگر خوشت اومد، یک ⭐ روی ریپازیتوری بزار که حمایت بشیم!  
+<br>  
+مرسی که این پروژه رو دیدی ❤️🔥
 </p>
