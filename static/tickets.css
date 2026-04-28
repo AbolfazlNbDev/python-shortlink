@@ -1,0 +1,177 @@
+@font-face{
+    font-family:"Vazir";
+    src:url("fonts/Vazir.woff2") format("woff2");
+}
+html{
+    background: linear-gradient(to right, #f5f7ff 0%, #c3cfe2 50%, #b9e7ff 100%);
+}
+body{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+*{
+    cursor: url("/static/images/curs.png") 4 2, auto;
+}
+
+.tickets_header_box h2{
+    font-family: Vazir, sans-serif;
+    color: #5500d4;
+    font-size: 20px;
+
+}
+
+.tickets_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tickets_header_box img{
+    width:70px;
+    height:70px;
+}
+.tickets_header_box{
+    width: 400px;
+    height: 500px;
+    background-color:#fff;
+    margin:30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    box-shadow: 0 20px  45px -10px rgba(0,0,0,0.2);
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.tickets_header_box:hover{
+    transform: translateY(-10px);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+form input{
+    font-family: Vazir, sans-serif;
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgb(189, 188, 188);
+    border-radius: 10px;
+    padding: 8px 14px;
+    transition:all 0.3s ease;
+}
+
+input:focus {
+    background-color: #e2e2f4; border-color: #650fcf; outline: none;
+}
+
+form button{
+    width: 330px;
+    height: 40px;
+    cursor:pointer;
+    color: white;
+    background-color: #5500d4;
+    font-size: 17px;
+
+    font-family: Vazir, sans-serif;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+form button:hover{
+    background-color: #4c0dab;
+}
+
+hr{
+    margin-top: 20px;
+    width: 300px;
+    border-color: #650fcf;
+}
+
+
+
+
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+li a{
+    font-family: Vazir, sans-serif;
+    color: rgb(103, 7, 168);
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+li a:hover{
+    background-color: #4c0dab;
+    color: white;
+    outline: none;
+}
+
+.status{
+    color: #5500d4;
+    font-size: 24px;
+    font-family: Vazir, sans-serif;
+
+}
+
+.open{
+    color: rgb(90, 16, 208);
+    font-size: 20px;
+    font-family: Vazir, sans-serif;
+    
+}
+
+
+.tickets_bottom h2{
+    text-align: center;
+    font-size: 27px;
+    font-family: Vazir, sans-serif;
+    color: rgb(2, 163, 199);
+    border: 1px solid #a769d9;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+
+.tickets_bottom p{
+    color: rgba(184, 26, 14, 0.74);
+    text-align: center;
+    margin-top: 20px;
+    font-family: Vazir, sans-serif;
+    
+}
+
+@media (max-width:768px){
+    .tickets_header_box{
+        width: 300px;
+    }
+    form input{
+        width: 250px;
+        margin-right: 10px;
+    }
+    form button{
+        width: 280px;
+        margin-right: 10px;
+    }
+}

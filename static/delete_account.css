@@ -1,0 +1,125 @@
+@font-face{
+font-family:"Vazir";
+src:url("fonts/Vazir.woff2") format("woff2");
+}
+
+*{
+    cursor: url("/static/images/curs.png") 4 2, auto;
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(120deg, #f5f7ff 0%, #c3cfe2 50%, #b9e7ff 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+}
+
+.content img{
+    margin-top: 30px;
+    margin-left: 170px;
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+}
+
+.content{
+    border: 1px solid white;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin: 100px auto 0;
+    box-shadow: 2px 1px 3px rgb(206, 204, 204);
+}
+.content:hover{
+    transform: translateY(-10px);
+}
+.content h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family: Vazir;
+    font-size: 23px;
+    color: rgb(78, 12, 222);
+}
+
+.form-1 input {
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+    border: 1px solid #ccc; 
+    outline: none;
+    font-family: Vazir, sans-serif;
+    direction: rtl;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.content input:focus {
+    border-color: rgb(93, 13, 204);
+}
+.form-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-1 button {
+    border: none;
+    outline: none;
+    float: right;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-family: Vazir, sans-serif;
+    border-radius: 10px;
+    background-color: rgb(92, 8, 218);
+    margin-right: 10px;
+    width: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+    height: 40px;
+}
+
+.form-1 button:hover {
+    background-color: rgb(66, 7, 155);
+}
+
+.content h2{
+    background:#fff1f1;
+    color:#c0392b;
+    border:1px solid #f3c1c1;
+    font-size: 17px;
+    font-family: Vazir, sans-serif;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto 0;
+}
+@media (max-width:768px){
+    .content{
+        width: 300px;
+    }
+    .content img{
+        margin-left: 120px;
+    }
+    .content h1{
+        font-size: 15px;
+    }
+    .content input{
+        width: 250px;
+    }
+    .content button{
+        width: 250px;
+    }
+}

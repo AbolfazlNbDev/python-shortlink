@@ -1,0 +1,18 @@
+@font-face{
+    font-family:"Vazir";
+    src:url("fonts/Vazir.woff2") format("woff2");
+}
+html{
+    background: linear-gradient(to right, #f5f7ff 0%, #c3cfe2 50%, #b9e7ff 100%);
+}
+body{
+    margin: 0;
+    padding: 0;
+
+
+}
+
+
+*{
+    cursor: url("/static/images/curs.png") 4 2, auto;
+}

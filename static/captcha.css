@@ -1,0 +1,129 @@
+@font-face{
+font-family:"Vazir";
+src:url("fonts/Vazir.woff2") format("woff2");
+}
+
+*{
+box-sizing:border-box;
+}
+
+html{
+font-size:16px;
+-webkit-text-size-adjust:100%;
+}
+
+*{
+    cursor: url("/static/images/curs.png") 4 2, auto;
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Vazir,sans-serif;
+    direction:rtl;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(120deg, #f5f7ff 0%, #c3cfe2 50%, #b9e7ff 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 15s ease infinite;
+    min-height:100vh;
+}
+
+
+.content{
+    border: 1px solid white;
+    margin: 100px auto 0;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 3px 3px 4px rgb(193, 192, 192);
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.content:hover{
+    transform: translateY(-10px);
+}
+.content h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: Vazir, sans-serif;
+    color: rgb(89, 13, 203);
+}
+.form-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-1 img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.form-1 input{
+    margin-top: 20px;
+    border: 1px solid rgb(200, 199, 199);
+    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    font-family: Vazir, sans-serif;
+    background-color: white;
+    transition: 0.5s;
+    direction: rtl;
+    padding: 8px 14px;
+}
+.form-1 input:focus{
+    outline: none;
+    border-color: rgb(121, 14, 215);
+}
+.form-1 button{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 60px;
+    width: 300px;
+    color: white;
+    background-color: rgb(144, 5, 236);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 15px;
+    font-family: Vazir, sans-serif;
+}
+.form-1 button:hover{
+    background-color: rgb(107, 8, 173);
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    margin-top: 20px;
+    border-radius: 60px;
+    width: 70px;
+    height: 70px;
+
+}
+
+@media (max-width:768px){
+    .content{
+        width: 300px;
+    }
+    .content h1{
+        font-size: 20px;
+    }
+    .content img{
+        width: 130px;
+        height: 130px;
+    }
+    .form-1 input{
+        width: 250px;
+    }
+    .form-1 button{
+        width: 250px;
+    }
+}
