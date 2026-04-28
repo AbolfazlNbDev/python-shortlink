@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <link rel="icon" type="img/png" href="/static/images/logo.png">
+<link rel="stylesheet" href="/static/tickets.css">
+<meta charset="UTF-8">
+<title>پشتیبانی</title>
+</head>
+<body>
+<div class="tickets_header">
+<div class="tickets_header_box">
+    <img src="../static/images/logo.png" alt="logo">
+    <h2>ارسال تیکت جدید</h2>
+
+    <form method="POST" action="{{ url_for('support') }}">
+    <input type="text" name="subject" placeholder="عنوان تیکت" required>
+    <br><br>
+
+    <input name="message" placeholder="متن پیام" required>
+    <br><br>
+
+    <button type="submit">ارسال تیکت</button>
+    </form>
+</div>
+</div>
+<hr>
+<div class="tickets_bottom">
+    <h2>تیکت های شما</h2>
+
+    {% if tickets %}
+    <ul>
+    {% for t in tickets %}
+    <li>
+    <a href="/support/{{t[0]}}">
+    {{t[1]}}
+    </a>
+
+    <h1 class="status">وضعیت</h1>
+    {% if t[2] == "open" %}
+    <h1 class="open">باز</h1>
+    {% else %}
+    <h1 class="open">بسته</h1>
+    {% endif %}
+
+    </li>
+    {% endfor %}
+    </ul>
+
+    {% else %}
+    <p>هیچ تیکتی ندارید</p>
+    {% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/captcha.css">
+    <link rel="icon"  type="img/png" href="/static/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کپچا | اسموف</title>
+</head>
+<body>
+    <div class="content">
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Site logo">
+        </div>
+        <h1>کپچا رو حل کن</h1>
+        <div class="form-1">
+            <img src="/static/captcha.png" alt="Captcha image">
+            <form action="/check_captcha" method="post">
+                <input type="number" name="num" placeholder="لطفا عدد رو تصویر وارد کن"><br>
+                <button type="submit">برسی</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

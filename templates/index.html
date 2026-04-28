@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <link rel="icon" type="image/png" href="static/images/logo.png">
+    <link rel="stylesheet" href="static/index.css?v=1.1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کوتاه کننده لینک | اسموف</title>
+</head>
+<body>
+    <div id="main_menu" class="main_menu">
+        <ul>
+            <li><a href="#home">خانه</a></li>
+            <hr>
+            <li><a href="#short_link">کوتاه کننده لینک</a></li>
+            <hr>
+            <li><a href="#support">پشتیبانی</a></li>
+            <hr>
+            <li><a href="https://rubika.ir/librarynofex">تبلیغ : کانال اموزشی</a></li>
+            <hr>
+            <li><button class="tem" onclick="Change_tem()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>
+                    <line x1="12" y1="1" x2="12" y2="3"/>
+                    <line x1="12" y1="21" x2="12" y2="23"/>
+                    <line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/>
+                    <line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/>
+                    <line x1="1" y1="12" x2="3" y2="12"/>
+                    <line x1="21" y1="12" x2="23" y2="12"/>
+                    <line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/>
+                    <line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/>
+                </svg>
+            </button></li>
+            <hr>
+            {% if logged_in %}
+            <li><a href="/dashboard">پنل کاربری</a></li>
+            <hr>
+            <li><a href="/logout">خروج</a></li>
+            {% else %}
+            <li><a href="/login">ورود</a></li>
+            <hr>
+            <li><a href="/register">ثبت نام</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+    <section id="home">
+        <a class="open_menu" onclick="open_menu()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <line x1="3" y1="6" x2="21" y2="6" stroke="#7a2cff" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="3" y1="12" x2="21" y2="12" stroke="#7a2cff" stroke-width="2.5" stroke-linecap="round"/>
+                <line x1="3" y1="18" x2="21" y2="18" stroke="#7a2cff" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+        </a>
+
+        <div class="header">
+            <img class="logo" src="static/images/logo.png" alt="You browser dosnt suspport this image."> 
+            <h1>اسموف</h1>
+        </div>
+        <br>
+        <div class="notif_on" id="notif_off">
+            <h3>اعلان: <br>تم با موفقیت به روشن تغییر یافت</h3>
+        </div>
+        <div class="notif_off" id="notif_on">
+            <h3>اعلان :<br>تم با موفقیت به تیره تغییر یافت</h3>
+        </div>
+        <div class="header_one">
+            <h2>غمت نباشه لینکت رو بده برات کوتاه کنم</h2>
+            <h3>توجه به دلیل قطعی اینترنت بین الملل از درخواست های زیاد خود داری کنید !</h3>
+            {% if logged_in %}
+                <p style="font-family: Vazir, sans-serif; margin-right:40px; color: green;">
+                    سلام {{ user_name }}، خوش اومدی 
+                </p>
+            {% endif %}
+        </div>
+    </section>
+
+    <section id="short_link">
+        <hr>
+        <div class="content">
+            <h1>بخش تبدیل لینک</h1>
+        </div>
+        <div class="content_1">
+            <form action="/short_link" target="_self" method="post">
+                <input type="text" name="link" placeholder="اینجا لینک بزار">
+                <button type="submit">تبدیل</button>
+            </form>
+            <h1>کلیک کن تا کپی بشه</h1>
+            <h2 onclick="Copy(this)">{{ link }}</h2>
+            <h3 id="copy_text">کپی شد</h3>
+            {% if logged_in %}
+                <p style="font-family: Vazir, sans-serif;">تمام لینک‌هایی که اینجا می‌سازی در پنل کاربری ذخیره می‌شن.</p>
+            {% else %}
+                <p style="font-family: Vazir, sans-serif;">
+                    برای اینکه لینک هات ذخیره بشه <a href="/register">ثبت نام</a> یا <a href="/login">وارد</a> شو.
+                </p>
+            {% endif %}
+        </div>
+    </section>
+
+        <section id="support">
+        <br><br><br><br><br><br><br><br>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-icons">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=abolfazlnb@mailfa.com" target="_self" title="ایمیل">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#7a2cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="3" />
+                            <path d="M3 6L12 13L21 6" />
+                        </svg>
+                    </a>
+                    <a href="https://rubika.ir/a_bolnb" target="_self" title="روبیکا">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#24A1DE" stroke="none">
+                            <rect x="2" y="2" width="20" height="20" rx="6" />
+                            <path d="M7 7L17 12L7 17V7Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <p class="footer-text">این سایت با عشق ساخته شده در ۱۴۰۵</p>
+            </div>
+        </footer>
+    </section>
+
+    <script type="text/javascript">
+        !function(){var i="umJ6am",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    </script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>

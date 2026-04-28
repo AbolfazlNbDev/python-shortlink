@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="img/png" href="/static/images/logo.png">
+<title>مشاهده تیکت</title>
+<link rel="stylesheet" href="/static/support_ticket.css">
+</head>
+<body>
+
+<h2>{{ticket.subject}}</h2>
+
+<p>
+وضعیت:
+{% if ticket.status == "open" %}
+باز
+{% else %}
+بسته
+{% endif %}
+</p>
+
+<hr>
+
+<h3>پیام ها</h3>
+
+{% for r in replies %}
+
+<div style="border:1px solid #ccc;padding:10px;margin:10px">
+
+<b>
+{% if r.is_admin == 1 %}
+پشتیبانی
+{% else %}
+{{r.name}}
+{% endif %}
+</b>
+
+<p>{{r.message}}</p>
+
+</div>
+
+{% endfor %}
+
+{% if ticket.status == "open" %}
+
+<hr>
+
+<h3>ارسال پیام</h3>
+
+<form method="POST">
+
+<textarea name="message" required></textarea>
+<br><br>
+
+<button type="submit">ارسال</button>
+
+</form>
+
+{% else %}
+
+<p>این تیکت بسته شده است</p>
+
+{% endif %}
+
+</body>
+</html>

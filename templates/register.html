@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام | اسموف</title>
+    <link rel="stylesheet" href="/static/panel.css">
+</head>
+<body class="auth-body">
+<div class="auth-card">
+    <div class="logo">
+        <img src="../static/images/logo.png" alt="">
+    </div>
+    <h2>ثبت نام در اسموف</h2>
+
+    {% if error %}
+    <div class="form-message error-message">{{ error }}</div>
+    {% endif %}
+
+    {% if success %}
+    <div class="form-message success-message">{{ success }}</div>
+    {% endif %}
+
+    <form action="/register_user" method="post">
+        <input type="text" name="name" placeholder="نام کامل" value="{{ old_name or '' }}">
+        <input type="email" name="email" placeholder="ایمیل" value="{{ old_email or '' }}">
+        <input type="password" name="password" placeholder="رمز عبور">
+        <button type="submit">ثبت نام</button>
+    </form>
+
+    <p>حساب داری؟ <a href="/login">وارد شو</a></p>
+    <a class="back-home" href="/smoth">بازگشت به صفحه اصلی</a>
+</div>
+</body>
+</html>

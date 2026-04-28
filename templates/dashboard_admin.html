@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/dashborad_admin_panel.css">
+    <link rel="icon" type="img/png" href="/static/images/logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد ادمین | اسموف</title>
+</head>
+<body>
+    <h2 id="notif_admin">{{ notif }}</h2>
+    <h1 class="add_text">بخش اضافه کردن اکانت</h1>
+    <div class="add_account">
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Logo for site">
+        </div>
+        <h1>اضافه کردن اکانت</h1>
+        <h2>{{ success }}</h2>
+        <form action="/add_account" method="post">
+            <div class="form-1">
+                <input type="text" name="name" placeholder="نام اکانت را وارد کن">
+                <input type="email" name="email" placeholder="ایمیل اکانت وارد کن">
+                <input type="password" name="password" placeholder="پسورد اکانت وارد کن">
+                <button type="submit">تایید</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+    <h3 class="add_text">بخش حذف اکانت</h3>
+    <div class="add_account">
+        <div class="logo">
+            <img src="/static/images/logo.png" alt="Logo for site">
+        </div>
+        <h1>حذف کردن اکانت</h1>
+        <h2>{{ success_1 }}</h2>
+        <h2>{{ eror_1 }}</h2>
+        <form action="/delete_acc_fr_admin" method="post" target="_self">
+            <div class="form-1">
+                <input type="email" name="email" placeholder="ایمیل کاربر را لطفا وارد کن">
+                <button type="submit">تایید</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

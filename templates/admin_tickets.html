@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/static/admin_tickets.css">
+<title>مدیریت تیکت ها</title>
+</head>
+<body>
+<h1>تیکت ها</h1>
+<div class="header_links">
+    <a href="/admin/tickets?status=all">همه</a> |
+    <a href="/admin/tickets?status=open">باز</a> |
+    <a href="/admin/tickets?status=closed">بسته</a>
+</div>
+<hr>
+
+<table border="1" cellpadding="10">
+
+<tr>
+<th>ID</th>
+<th>کاربر</th>
+<th>ایمیل</th>
+<th>عنوان</th>
+<th>وضعیت</th>
+<th>مشاهده</th>
+</tr>
+
+{% for t in tickets %}
+
+<tr>
+
+<td>{{t[0]}}</td>
+
+<td>{{t[4]}}</td>
+
+<td>{{t[5]}}</td>
+
+<td>{{t[1]}}</td>
+
+<td>{{t[2]}}</td>
+
+<td>
+<a href="/admin/tickets/{{t[0]}}">باز کردن</a>
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+</html>

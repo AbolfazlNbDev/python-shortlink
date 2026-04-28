@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/admin_ticket_view.css">
+
+    <title>مشاهده تیکت</title>
+</head>
+<body>
+<div class="ticket_info">
+    <h2>{{ticket.subject}}</h2>
+    <p>کاربر: {{ticket.name}}</p>
+    <p>ایمیل: {{ticket.email}}</p>
+    <p>وضعیت: {{ticket.status}}</p>
+</div>
+<hr>
+
+<h3>پیام ها</h3>
+
+{% for r in replies %}
+<div class="reply">
+    <b>
+        {% if r[0] == "admin" %}
+        ادمین
+        {% else %}
+        کاربر
+        {% endif %}
+    </b>
+    <p>{{r[1]}}</p>
+</div>
+{% endfor %}
+
+<hr>
+
+<h3>ارسال پاسخ</h3>
+
+<form method="POST" action="/admin/tickets/{{ticket.id}}/reply">
+    <textarea name="message" required></textarea>
+    <button type="submit">ارسال پاسخ</button>
+</form>
+
+<br>
+
+{% if ticket.status == "open" %}
+<form method="POST" action="/admin/tickets/{{ticket.id}}/close">
+    <button type="submit">بستن تیکت</button>
+</form>
+{% else %}
+<form method="POST" action="/admin/tickets/{{ticket.id}}/open">
+    <button type="submit">باز کردن تیکت</button>
+</form>
+{% endif %}
+
+</body>
+</html>

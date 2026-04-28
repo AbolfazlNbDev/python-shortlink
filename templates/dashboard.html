@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/png" href="static/images/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کاربری | اسموف</title>
+    <link rel="stylesheet" href="/static/panel.css">
+</head>
+<body class="dashboard-body">
+
+<header class="dash-header">
+    <div class="dash-title">پنل کاربری اسموف</div>
+    <div class="dash-user">
+        <span>سلام {{ name }}</span>
+        <a href="/smoth" class="dash-btn">صفحه اصلی</a>
+        <a href="/delete_account" class="dash-btn-delete-account">حذف اکانت</a>
+        <a href="/change_account_password" class="dash-change-password">تغییر پسورد</a>
+        <a href="/logout" class="dash-btn dash-logout">خروج</a>
+    </div>
+</header>
+
+<main class="dash-main">
+    <section class="dash-create">
+        <h1>توجه : تمام لینک ها به دلیل ناپایداری اینترنت بعد 450 تا کلیک حذف میشوند !</h1>
+        <h2>ساخت لینک کوتاه جدید</h2>
+
+        {% if error %}
+        <div id="eror_dash" class="form-message error-message">{{ error }}</div>
+        {% endif %}
+
+        {% if success %}
+        <div class="form-message success-message">{{ success }}</div>
+        {% endif %}
+
+        <form action="/create" method="post">
+            <input type="text" name="url" placeholder="لینک اصلی را اینجا وارد کن">
+            <button type="submit">ساخت لینک</button>
+        </form>
+    </section>
+
+    <section class="dash-links">
+        <h2>لینک‌های شما</h2>
+
+        {% if links|length == 0 %}
+            <p class="empty-msg">هنوز هیچ لینکی نساختی.</p>
+        {% else %}
+        <table>
+            <thead>
+                <tr>
+                    <th>لینک کوتاه</th>
+                    <th>لینک اصلی</th>
+                    <th>کلیک‌ها</th>
+                    <th>حذف</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for l in links %}
+                <tr>
+                    <td>
+                        <a href="{{ base_url }}{{ l[1] }}" target="_blank">
+                            {{ base_url }}{{ l[1] }}
+                        </a>
+                    </td>
+                    <td class="long-url">{{ l[2] }}</td>
+                    <td>{{ l[3] }}</td>
+                    <td>
+                        <a class="delete-link" href="/delete/{{ l[0] }}" onclick="return confirm('حذف شود؟');">
+                            حذف
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </section>
+</main>
+<script src="/static/js/script.js"></script>
+</body>
+</html>

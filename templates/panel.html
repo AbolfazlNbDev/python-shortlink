@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="img/png" href="/static/images/logo.png">
+    <link rel="stylesheet" href="/static/admin_panel.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل مدریت | اسموف</title>
+</head>
+<body>
+    <div class="content">
+        <img src="/static/images/logo.png" alt="Logo for site">
+        <h2>لاگین</h2>
+        <h3>{{ eror }}</h3>
+        <form action="/login_proc" method="post">
+            <input type="password" name="password" placeholder="پسورد را وارد کن">
+            <button type="submit">برسی</button>
+        </form>
+    </div>
+</body>
+</html>

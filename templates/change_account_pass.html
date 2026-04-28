@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/change_account_pass.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تغییر پسورد | اسموف</title>
+</head>
+<body>
+    <div class="content">
+        <img class="logo" src="/static/images/logo.png" alt="Your browser dosnt support this image please try again with diffrent browser.">
+        <h2>تغییر پسورد</h2>
+        <h3>{{ eror }}</h3>
+        <form action="/change_pass_ac" method="post">
+            <div class="form-1">
+                <input type="email" name="email" placeholder="ایمیل اکانتت را وارد کن">
+                <input type="password" name="old_pass" placeholder="پسورد فعلی وارد کن">
+                <input type="password" name="new_pass" placeholder="پسورد جدید وارد کن">
+                <button type="submit">تایید</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
