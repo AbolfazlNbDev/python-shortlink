@@ -2,7 +2,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=PYTHON%20SHORTLINK&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
 
-<h3 align="center">🚀 سیستم کوتاه کننده لینک سریع و امن با Framework Flask with css, html , js
+<h3 align="center">سیستم کوتاه کننده لینک سریع و امن با Framework Flask with css, html , js
 </h3>
 
 <p align="center">
@@ -42,6 +42,7 @@
 داشبورد مخصوص هر کاربر 
 پنل ادمین
 امکان فرستادن تیکت 
+
 ---
 
 # 🏗 نحوه کار سیستم
