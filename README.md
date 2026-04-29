@@ -57,15 +57,16 @@
 برای اجرای این سیستم در محیط لوکال خود، به پایتون `3.8` یا بالاتر نیاز دارید.
 
 ۱. کلون کردن مخزن:
-bash
+```bash
 git clone https://github.com/AbolfazlNbDeV/python-shortlink.git
 cd python-shortlink
+```
 
 ۲. ساخت و فعال‌سازی محیط ایزوله (Virtualenv):
-bash
+```bash
 python -m venv .venv
 source .venv/bin/activate  # In Windows use: .venv\Scripts\activate
-
+```
 ۳. نصب وابستگی‌های هسته:
 bash
 pip install --upgrade pip
