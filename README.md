@@ -68,21 +68,20 @@ python -m venv .venv
 source .venv/bin/activate  # In Windows use: .venv\Scripts\activate
 ```
 ۳. نصب وابستگی‌های هسته:
-bash
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-
+```
 ---
 
-## 🛑 تنظیمات امنیتی و پیکربندی
+## 🛑 اموزش ادیت کردن و ران کردن:
+ابتدا فایل Config.py باز میکنید و تمام جاهایی که خالی هست یا من بهتون گفتم چی بزارید رو تکمیل میکنید و سیو میکنید و با توجه به مطالب بالا تر با دستور
+```bash
+python app.py
+```
+یا :
+```bash
+python3 app.py
+```
 
-⚠️ هشدار: پیش از اجرای پروژه، حتماً کلیدهای امنیتی را تغییر دهید! 
 
-فایل `config.py` را باز کرده و مقادیر زیر را به دقت تنظیم کنید:
-
-python
-# ----------------------------------
-# 🔴 CORE SECURITY SETTINGS 🔴
-# ----------------------------------
-DOMAIN = "http://127.0.0.1:8000"
-SECRETKEY = "CHANGETHISTOAVERYLONGRANDOMSTRING"
