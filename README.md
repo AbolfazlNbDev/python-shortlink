@@ -2,7 +2,8 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=PYTHON%20SHORTLINK&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
 
-<h3 align="center">🚀 سیستم کوتاه کننده لینک سریع و امن با Python و Flask</h3>
+<h3 align="center">🚀 سیستم کوتاه کننده لینک سریع و امن با Framework Flask with css, html , js
+</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python">
@@ -33,7 +34,14 @@
 ✅ ذخیره لینک‌ها در دیتابیس  
 ✅ ریدایرکت سریع  
 ✅ قابلیت توسعه  
-
+متصل به دیتابیس sqlite3
+سیستم کامل احراز هویت با ایمیل و تایید لینک واقعی
+تولید کپچا واقعی دست ساز
+خیلی بهینه مخصوص لوکال و سرور و هاست 
+حذف حساب و تغییر پسورد اکانت 
+داشبورد مخصوص هر کاربر 
+پنل ادمین
+امکان فرستادن تیکت 
 ---
 
 # 🏗 نحوه کار سیستم
@@ -50,30 +58,39 @@ Client ➜ Flask Server ➜ Database ➜ Redirect
 # 🚀 اجرای پروژه
 
 برای اجرای پروژه مراحل زیر را انجام دهید:
-
+```bash
 git clone https://github.com/AbolfazlNbDeV/python-shortlink.git
-
+```
+```bash
 cd python-shortlink
-
+```
+```bash
 python -m venv .venv
+```
 
 # فعال سازی محیط مجازی
 
 # لینوکس / مک
+```bash
 source .venv/bin/activate
-
+```
 # ویندوز
+```bash
 .venv\Scripts\activate
-
+```
 # نصب وابستگی ها
+```bash
 pip install --upgrade pip
 pip install -r requirements.txt
-
+```
 # اجرای برنامه
+```bash
 python app.py
-
+```
 # باز کردن در مرورگر
+```bash
 http://localhost:5000
+```
 
 ---
 
@@ -85,11 +102,10 @@ Config.py
 
 نمونه تنظیمات:
 
-BASE_URL = "http://localhost:5000"  
-SECRET_KEY = "CHANGE_THIS_SECRET_KEY"  
-DATABASE = "shortlink.db"  
-
----
+باید ایمیلی که میخوایید به عنوان ایمیل اصلی سایت باشه بگزارید برای تایید ایمیل سایت و قسمت پسورد هم یک پسورد برنامه بسازید، 
+کلید سکرت دلخواه و مهم درست کنید با حروف میشه بعد بزارید مثلا 
+Im Programmer 
+و ....
 
 # 📊 آمار گیت‌هاب
 
