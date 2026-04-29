@@ -1,209 +1,178 @@
-<h1 align="center">
-  <font color="#E63946">PYTHON SHORTLINK</font>
-</h1>
+<h1 align="center">🚀 PYTHON SHORTLINK</h1>
 
 <p align="center">
-  <strong>🔥 A Blazing Fast, Enterprise‑Ready URL Shortener Built for Speed & Security 🔥</strong>
+  <b>سیستم حرفه‌ای و سریع کوتاه‌کننده لینک با امنیت بالا</b>
 </p>
 
 <p align="center">
-  <a href="https://python.org"><img src="https://img.shields.io/badge/Python_3.8+-E63946.svg?style=for-the-badge&logo=python&logoColor=white"></a>
-  <a href="https://flask.palletsprojects.com/"><img src="https://img.shields.io/badge/Flask_Backend-111111.svg?style=for-the-badge&logo=flask&logoColor=E63946"></a>
-  <a href="https://sqlite.org/"><img src="https://img.shields.io/badge/SQLite_DB-E63946.svg?style=for-the-badge&logo=sqlite&logoColor=white"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Status-Highly_Active-111111.svg?style=for-the-badge&logo=fire&logoColor=E63946"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-E63946.svg?style=for-the-badge"></a>
-  <a href="https://github.com/AbolfazlNbDeV/python-shortlink/stargazers"><img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=social"></a>
+  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask">
+  <img src="https://img.shields.io/badge/Database-SQLite-green?style=for-the-badge&logo=sqlite">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=for-the-badge">
 </p>
 
-<br>
+---
 
-<blockquote align="center">
-  <p>یک سیستم بسیار سریع و بهینه کوتاه کننده لینک با معماری ماژولار و امنیت بالا</p>
-</blockquote>
+## 🧠 معرفی پروژه
+
+**Python Shortlink** یک سیستم سریع و امن برای کوتاه کردن لینک‌ها است که با استفاده از Flask توسعه داده شده و ساختاری ماژولار و قابل توسعه دارد.
+
+این پروژه مناسب استفاده شخصی، آموزشی و حتی پیاده‌سازی روی سرور واقعی می‌باشد.
 
 ---
 
-# 🩸 ویژگی‌های کلیدی
+## ✨ ویژگی‌های کلیدی
 
-- موتور تولید لینک فوق سریع با جلوگیری از Collision
-- امنیت بالا در برابر Brute Force
-- سیستم Captcha سفارشی
-- مدیریت Session ایمن
-- پنل مدیریت کامل برای ادمین
-- سیستم تیکت پشتیبانی
-- آنالیز کلیک‌ها و آمار کاربران
-- ذخیره IP و User-Agent
-- معماری ماژولار برای توسعه راحت
+✅ تولید لینک کوتاه با الگوریتم امن  
+✅ جلوگیری از Collision  
+✅ ذخیره IP و User-Agent  
+✅ سیستم مدیریت ادمین  
+✅ ثبت و تحلیل تعداد کلیک‌ها  
+✅ ساختار ماژولار برای توسعه راحت  
+✅ آماده برای Deploy روی سرور  
 
 ---
 
-# 🧠 معماری و جریان داده
+## 🏗 معماری سیستم
 
- ┌──────────────┐           POST /shorten            ┌──────────────────┐
- │              ├────────────────────────────────────▶│                  │
- │ Client/User  │                                     │  Flask App Core  │
- │              │◀────────────────────────────────────┤                  │
- └──────┬───────┘        Returns short link           └────────┬─────────┘
-        │                                                       │
-        │                     GET /short.id                     │
-        └───────────────────────────────────────────────────────┤
-                                                                ▼
-                                                      ┌──────────────────┐
-                                                      │    SQLite DB     │
-                                                      └────────┬─────────┘
-                                                               │
-                                                               ▼
-                                                     HTTP 302 Redirect
-                                                               │
-                                                               ▼
-                                                        Target Website
+Client ➜ Flask Backend ➜ Database ➜ Redirect
+
+1. کاربر لینک را ارسال می‌کند  
+2. سیستم یک شناسه تصادفی امن تولید می‌کند  
+3. در دیتابیس ذخیره می‌شود  
+4. هنگام باز شدن لینک کوتاه، کاربر به لینک اصلی هدایت می‌شود  
 
 ---
 
-# 🚀 نصب و راه‌اندازی
+## 🚀 نصب و اجرا
 
-برای اجرای این پروژه به Python 3.8 یا بالاتر نیاز دارید.
+### 1️⃣ کلون کردن پروژه
 
-Clone Project
-
-git clone https://github.com/AbolfazlNbDeV/python-shortlink.git
-cd python-shortlink
+git clone https://github.com/AbolfazlNbDeV/python-shortlink.git  
+cd python-shortlink  
 
 ---
 
-Create Virtual Environment
+### 2️⃣ ساخت محیط مجازی
 
-python -m venv .venv
+python -m venv .venv  
 
-Linux / Mac
+فعال‌سازی در لینوکس / مک:
 
-source .venv/bin/activate
+source .venv/bin/activate  
 
-Windows
+در ویندوز:
 
-.venv\Scripts\activate
-
----
-
-Install Requirements
-
-pip install --upgrade pip
-pip install -r requirements.txt
+.venv\Scripts\activate  
 
 ---
 
-# ⚙️ Configuration
+### 3️⃣ نصب وابستگی‌ها
+
+pip install --upgrade pip  
+pip install -r requirements.txt  
+
+---
+
+## ⚙️ تنظیمات پروژه
 
 فایل زیر را باز کنید:
 
-Config.py
+Config.py  
 
-نمونه تنظیمات:
+نمونه تنظیم:
 
-BASE_URL = "http://localhost:5000"
-SECRET_KEY = "CHANGE_THIS_SECRET_KEY"
-DATABASE = "shortlink.db"
-ADMIN_USERNAME = "admin"
-ADMIN_PASSWORD = "strongpassword"
-
----
-
-# ▶️ Run Application
-
-python app.py
-
-یا
-
-python3 app.py
-
-باز کردن در مرورگر:
-
-http://localhost:5000
+BASE_URL = "http://localhost:5000"  
+SECRET_KEY = "CHANGE_THIS_SECRET_KEY"  
+DATABASE = "shortlink.db"  
+ADMIN_USERNAME = "admin"  
+ADMIN_PASSWORD = "strongpassword"  
 
 ---
 
-# 🧪 Test Example
+## ▶️ اجرای برنامه
 
-https://your-domain.com/aB3Xk9
+python app.py  
 
-با باز کردن این لینک کاربر به لینک اصلی هدایت می‌شود.
+سپس مرورگر را باز کنید:
 
----
-
-# 📁 Project Structure
-
-python-shortlink
-│
-├── app.py
-├── Config.py
-├── requirements.txt
-├── database.db
-│
-├── templates
-│   ├── index.html
-│   ├── admin.html
-│   └── login.html
-│
-├── static
-│   ├── css
-│   ├── js
-│   └── images
-│
-└── utils
-    ├── generator.py
-    ├── security.py
-    └── analytics.py
+http://localhost:5000  
 
 ---
 
-# ⚡ Advanced Features
+## 📁 ساختار پروژه
 
-- Secure Random ID Generation
-- Collision Prevention Algorithm
-- Rate Limiting Ready
-- Session Security
-- Click Tracking System
-- Modular Architecture
-- Production Ready Structure
-
----
-
-# 🔐 Production Security Tips
-
-- Use Nginx Reverse Proxy
-- Run with Gunicorn
-- Enable HTTPS
-- Add Rate Limiting
-- Use PostgreSQL or Redis
-
----
-
-# 🧩 Contributing
-
-git checkout -b feature/new-feature
-git commit -m "Add new feature"
-git push origin feature/new-feature
-
-سپس Pull Request ارسال کنید.
+python-shortlink  
+│  
+├── app.py  
+├── Config.py  
+├── requirements.txt  
+├── database.db  
+│  
+├── templates  
+│   ├── index.html  
+│   ├── admin.html  
+│   └── login.html  
+│  
+├── static  
+│   ├── css  
+│   ├── js  
+│   └── images  
+│  
+└── utils  
+    ├── generator.py  
+    ├── security.py  
+    └── analytics.py  
 
 ---
 
-# ⭐ Support Project
+## 🔐 پیشنهاد برای اجرای روی سرور
 
-اگر این پروژه برای شما مفید بود لطفاً در GitHub به آن Star بدهید.
+برای استفاده حرفه‌ای پیشنهاد می‌شود:
 
-https://github.com/AbolfazlNbDeV/python-shortlink
-
----
-
-# 👨‍💻 Developer
-
-AbolfazlNbDeV
-
-https://github.com/AbolfazlNbDeV
+✔ استفاده از Nginx  
+✔ اجرای پروژه با Gunicorn  
+✔ فعال‌سازی HTTPS  
+✔ استفاده از PostgreSQL  
+✔ فعال کردن Rate Limiting  
 
 ---
 
-# 📜 License
+## 🤝 مشارکت در پروژه
 
-MIT License
+git checkout -b feature/new-feature  
+git commit -m "Add new feature"  
+git push origin feature/new-feature  
+
+سپس Pull Request ارسال کنید ✅  
+
+---
+
+## ⭐ حمایت از پروژه
+
+اگر این پروژه برای شما مفید بوده لطفاً در گیت‌هاب به آن ⭐ بدهید:
+
+https://github.com/AbolfazlNbDeV/python-shortlink  
+
+---
+
+## 📊 آمار گیت‌هاب
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AbolfazlNbDeV&show_icons=true&theme=radical">
+</p>
+
+---
+
+## 👨‍💻 توسعه‌دهنده
+
+AbolfazlNbDeV  
+
+https://github.com/AbolfazlNbDeV  
+
+---
+
+## 📜 لایسنس
+
+این پروژه تحت لایسنس MIT منتشر شده است.
