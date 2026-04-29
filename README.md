@@ -1,87 +1,108 @@
-<h1 align="center">🚀 PYTHON SHORTLINK</h1>
-
 <p align="center">
-  <b>سیستم حرفه‌ای و سریع کوتاه‌کننده لینک با امنیت بالا</b>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=PYTHON%20SHORTLINK&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
+
+<h3 align="center">🚀 سیستم حرفه‌ای کوتاه‌کننده لینک با امنیت بالا و معماری ماژولار</h3>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python">
   <img src="https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask">
   <img src="https://img.shields.io/badge/Database-SQLite-green?style=for-the-badge&logo=sqlite">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-red?style=for-the-badge">
   <img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/AbolfazlNbDeV/python-shortlink?style=for-the-badge">
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=AbolfazlNbDeV&label=بازدید%20پروفایل&color=blueviolet&style=for-the-badge">
 </p>
 
 ---
 
-## 🧠 معرفی پروژه
+# 🧠 معرفی پروژه
 
-**Python Shortlink** یک سیستم سریع و امن برای کوتاه کردن لینک‌ها است که با استفاده از Flask توسعه داده شده و ساختاری ماژولار و قابل توسعه دارد.
+**Python Shortlink** یک سیستم سریع، امن و قابل توسعه برای کوتاه‌سازی لینک‌هاست که با استفاده از Flask توسعه داده شده و ساختار آن برای استفاده در محیط Production آماده است.
 
-این پروژه مناسب استفاده شخصی، آموزشی و حتی پیاده‌سازی روی سرور واقعی می‌باشد.
+این پروژه مناسب استفاده شخصی، آموزشی و حتی استقرار روی سرور واقعی می‌باشد.
 
 ---
 
-## ✨ ویژگی‌های کلیدی
+# ✨ ویژگی‌های کلیدی
 
 ✅ تولید لینک کوتاه با الگوریتم امن  
 ✅ جلوگیری از Collision  
 ✅ ذخیره IP و User-Agent  
 ✅ سیستم مدیریت ادمین  
-✅ ثبت و تحلیل تعداد کلیک‌ها  
-✅ ساختار ماژولار برای توسعه راحت  
-✅ آماده برای Deploy روی سرور  
+✅ تحلیل تعداد کلیک‌ها  
+✅ ساختار ماژولار  
+✅ آماده برای Docker  
+✅ قابلیت توسعه به REST API  
 
 ---
 
-## 🏗 معماری سیستم
+# 🏗 معماری سیستم
 
-Client ➜ Flask Backend ➜ Database ➜ Redirect
+Client ➜ Flask Backend ➜ Database ➜ Redirect  
 
-1. کاربر لینک را ارسال می‌کند  
-2. سیستم یک شناسه تصادفی امن تولید می‌کند  
-3. در دیتابیس ذخیره می‌شود  
-4. هنگام باز شدن لینک کوتاه، کاربر به لینک اصلی هدایت می‌شود  
+1️⃣ کاربر لینک را ارسال می‌کند  
+2️⃣ شناسه تصادفی امن تولید می‌شود  
+3️⃣ در دیتابیس ذخیره می‌شود  
+4️⃣ هنگام باز شدن لینک کوتاه، ریدایرکت انجام می‌شود  
 
 ---
 
-## 🚀 نصب و اجرا
+# 🚀 نصب سریع
 
-### 1️⃣ کلون کردن پروژه
+## کلون پروژه
 
 git clone https://github.com/AbolfazlNbDeV/python-shortlink.git  
 cd python-shortlink  
 
----
-
-### 2️⃣ ساخت محیط مجازی
+## ساخت محیط مجازی
 
 python -m venv .venv  
 
-فعال‌سازی در لینوکس / مک:
+فعال‌سازی لینوکس:
 
 source .venv/bin/activate  
 
-در ویندوز:
+فعال‌سازی ویندوز:
 
 .venv\Scripts\activate  
 
----
+## نصب وابستگی‌ها
 
-### 3️⃣ نصب وابستگی‌ها
-
-pip install --upgrade pip  
 pip install -r requirements.txt  
 
+## اجرای برنامه
+
+python app.py  
+
+مرورگر:
+
+http://localhost:5000  
+
 ---
 
-## ⚙️ تنظیمات پروژه
+# 🐳 اجرای پروژه با Docker
 
-فایل زیر را باز کنید:
+ساخت Docker Image:
+
+docker build -t python-shortlink .  
+
+اجرای کانتینر:
+
+docker run -p 5000:5000 python-shortlink  
+
+---
+
+# ⚙️ تنظیمات
+
+فایل:
 
 Config.py  
 
-نمونه تنظیم:
+نمونه:
 
 BASE_URL = "http://localhost:5000"  
 SECRET_KEY = "CHANGE_THIS_SECRET_KEY"  
@@ -91,17 +112,31 @@ ADMIN_PASSWORD = "strongpassword"
 
 ---
 
-## ▶️ اجرای برنامه
+# 🔐 امنیت در محیط Production
 
-python app.py  
-
-سپس مرورگر را باز کنید:
-
-http://localhost:5000  
+✔ استفاده از Nginx  
+✔ اجرای Gunicorn  
+✔ فعال‌سازی HTTPS  
+✔ استفاده از PostgreSQL  
+✔ فعال‌سازی Rate Limiting  
+✔ تنظیم Firewall  
 
 ---
 
-## 📁 ساختار پروژه
+# 🗺 نقشه راه (Roadmap)
+
+- [x] تولید لینک کوتاه  
+- [x] پنل مدیریت  
+- [x] ثبت آمار کلیک  
+- [ ] اضافه کردن API عمومی  
+- [ ] سیستم کاربران و احراز هویت  
+- [ ] داشبورد گرافیکی پیشرفته  
+- [ ] استفاده از Redis Cache  
+- [ ] استقرار خودکار CI/CD  
+
+---
+
+# 📁 ساختار پروژه
 
 python-shortlink  
 │  
@@ -111,35 +146,28 @@ python-shortlink
 ├── database.db  
 │  
 ├── templates  
-│   ├── index.html  
-│   ├── admin.html  
-│   └── login.html  
-│  
 ├── static  
-│   ├── css  
-│   ├── js  
-│   └── images  
-│  
 └── utils  
-    ├── generator.py  
-    ├── security.py  
-    └── analytics.py  
 
 ---
 
-## 🔐 پیشنهاد برای اجرای روی سرور
+# 📊 آمار گیت‌هاب
 
-برای استفاده حرفه‌ای پیشنهاد می‌شود:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AbolfazlNbDeV&show_icons=true&theme=tokyonight">
+</p>
 
-✔ استفاده از Nginx  
-✔ اجرای پروژه با Gunicorn  
-✔ فعال‌سازی HTTPS  
-✔ استفاده از PostgreSQL  
-✔ فعال کردن Rate Limiting  
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AbolfazlNbDeV&theme=tokyonight">
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AbolfazlNbDeV&theme=tokyo-night">
+</p>
 
 ---
 
-## 🤝 مشارکت در پروژه
+# 🤝 مشارکت در پروژه
 
 git checkout -b feature/new-feature  
 git commit -m "Add new feature"  
@@ -149,23 +177,15 @@ git push origin feature/new-feature
 
 ---
 
-## ⭐ حمایت از پروژه
+# ⭐ حمایت از پروژه
 
-اگر این پروژه برای شما مفید بوده لطفاً در گیت‌هاب به آن ⭐ بدهید:
+اگر این پروژه برای شما مفید بوده لطفاً ⭐ بدهید:
 
 https://github.com/AbolfazlNbDeV/python-shortlink  
 
 ---
 
-## 📊 آمار گیت‌هاب
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbolfazlNbDeV&show_icons=true&theme=radical">
-</p>
-
----
-
-## 👨‍💻 توسعه‌دهنده
+# 👨‍💻 توسعه‌دهنده
 
 AbolfazlNbDeV  
 
@@ -173,6 +193,6 @@ https://github.com/AbolfazlNbDeV
 
 ---
 
-## 📜 لایسنس
-
-این پروژه تحت لایسنس MIT منتشر شده است.
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer"/>
+</p>
