@@ -1,137 +1,83 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=PYTHON%20SHORTLINK&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:f00000,50:8b0000,100:4b0000&height=200&section=header&text=QR%20CODE%20CREATOR&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35"/>
 </p>
 
-<h3 align="center">سیستم کوتاه کننده لینک سریع و امن با Framework Flask with css, html , js
+<h3 align="center">
+سیستم ساخت QR Code سریع، سبک و حرفه‌ای با Python و Tkinter
 </h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8+-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Flask-Backend-black?style=for-the-badge&logo=flask">
-  <img src="https://img.shields.io/badge/Database-SQLite-green?style=for-the-badge&logo=sqlite">
-  <img src="https://img.shields.io/github/stars/AbolfazlNbDeV/python-shortlink?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/AbolfazlNbDeV/python-shortlink?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-3.8+-red?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Tkinter-UI-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/QR%20Generator-qrcode-black?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Windows-Installer-blue?style=for-the-badge&logo=windows">
+  <img src="https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPO?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/YOUR_USERNAME/YOUR_REPO?style=for-the-badge">
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=AbolfazlNbDeV&label=Profile%20Views&color=blueviolet&style=for-the-badge">
+  <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=red&style=for-the-badge">
 </p>
 
 ---
 
 # 🧠 معرفی پروژه
 
-**Python Shortlink** یک سیستم سریع برای کوتاه کردن لینک‌ها است که با استفاده از Flask ساخته شده و می‌تواند به راحتی روی سیستم شخصی یا سرور اجرا شود.
+**QR Code Creator** یک نرم‌افزار دسکتاپی سریع، سبک و کاربرپسند برای ساخت QR Code از هر متن یا لینک است.
 
-هدف پروژه ایجاد یک سرویس ساده، سریع و امن برای تبدیل لینک‌های طولانی به لینک‌های کوتاه است.
+این برنامه با رابط کاربری ساده و ظاهر جذاب، به شما اجازه می‌دهد:
+
+- متن یا لینک مورد نظر را وارد کنید  
+- رنگ پس‌زمینه QR را انتخاب کنید  
+- رنگ اصلی QR (بردر) را تنظیم کنید  
+- خروجی را به صورت تصویر باکیفیت ذخیره کنید  
+
+هدف اصلی این پروژه، ساخت یک ابزار ساده، تمیز و در عین حال حرفه‌ای برای ساخت QR Code روی ویندوز است.
+
+---
+
+# 📥 دانلود برنامه (فقط از بخش Releases)
+
+برای دانلود آخرین نسخه برنامه (فایل exe یا Setup):
+
+👉 **حتماً از بخش Releases گیت‌هاب استفاده کنید:**
+
+➡️ **[Download From Releases](../../releases)**
+
+> ⚠️ توجه:  
+> - فایل‌های exe / setup داخل سورس قرار داده نشده‌اند.  
+> - فقط در بخش **Releases** منتشر می‌شوند.  
 
 ---
 
 # ✨ ویژگی‌ها
 
-✅ تولید لینک کوتاه  
-✅ سرعت بالا  
-✅ ذخیره لینک‌ها در دیتابیس  
-✅ ریدایرکت سریع  
-✅ قابلیت توسعه  
-متصل به دیتابیس sqlite3
-سیستم کامل احراز هویت با ایمیل و تایید لینک واقعی
-تولید کپچا واقعی دست ساز
-خیلی بهینه مخصوص لوکال و سرور و هاست 
-حذف حساب و تغییر پسورد اکانت 
-داشبورد مخصوص هر کاربر 
-پنل ادمین
-امکان فرستادن تیکت 
+✅ ساخت QR Code از متن یا لینک  
+✅ انتخاب رنگ پس‌زمینه QR  
+✅ انتخاب رنگ QR (Foreground/Border)  
+✅ ذخیره خودکار تصویر QR در پوشه مخصوص (مثلاً `images`)  
+✅ سرعت بالا و بسیار سبک  
+✅ بدون نیاز به اینترنت  
+✅ مناسب استفاده روی همه سیستم‌های ویندوز  
+✅ دارای آیکون اختصاصی برنامه (`icon.ico`)  
+✅ نسخه نصبی (Installer) حرفه‌ای ساخته شده با Inno Setup  
 
 ---
 
-# 🏗 نحوه کار سیستم
+# 🏗 نحوه عملکرد سیستم
 
-Client ➜ Flask Server ➜ Database ➜ Redirect
+User ➜ GUI (Tkinter) ➜ QR Generator (qrcode) ➜ Output PNG
 
-1. کاربر لینک را ارسال می‌کند  
-2. سیستم یک شناسه کوتاه تولید می‌کند  
-3. لینک در دیتابیس ذخیره می‌شود  
-4. هنگام باز شدن لینک کوتاه، کاربر به لینک اصلی هدایت می‌شود  
-
----
-
-# 🚀 اجرای پروژه
-
-برای اجرای پروژه مراحل زیر را انجام دهید:
-```bash
-git clone https://github.com/AbolfazlNbDeV/python-shortlink.git
-```
-```bash
-cd python-shortlink
-```
-```bash
-python -m venv .venv
-```
-
-# فعال سازی محیط مجازی
-
-# لینوکس / مک
-```bash
-source .venv/bin/activate
-```
-# ویندوز
-```bash
-.venv\Scripts\activate
-```
-# نصب وابستگی ها
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-# اجرای برنامه
-```bash
-python app.py
-```
-# باز کردن در مرورگر
-```bash
-http://localhost:5000
-```
+1. کاربر متن یا لینک را وارد می‌کند  
+2. رنگ‌ها را انتخاب می‌کند  
+3. دکمه ساخت را می‌زند  
+4. ماژول qrcode یک QR Code تولید می‌کند  
+5. فایل نهایی به صورت تصویر ذخیره می‌شود  
 
 ---
 
-# ⚙️ تنظیمات
-
-فایل زیر را ویرایش کنید:
-
-Config.py
-
-نمونه تنظیمات:
-
-باید ایمیلی که میخوایید به عنوان ایمیل اصلی سایت باشه بگزارید برای تایید ایمیل سایت و قسمت پسورد هم یک پسورد برنامه بسازید، 
-کلید سکرت دلخواه و مهم درست کنید با حروف میشه بعد بزارید مثلا 
-Im Programmer 
-و ....
-
-# 📊 آمار گیت‌هاب
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=AbolfazlNbDeV&show_icons=true&theme=tokyonight">
-</p>
-
----
-
-# ⭐ حمایت از پروژه
-
-اگر این پروژه برای شما مفید بود لطفاً در گیت‌هاب ⭐ بدهید:
-
-https://github.com/AbolfazlNbDeV/python-shortlink
-
----
-
-# 👨‍💻 توسعه‌دهنده
-
-AbolfazlNbDeV
-
-https://github.com/AbolfazlNbDeV
-
----
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer"/>
-</p>
+# 📦 ساختار فایل‌های پروژه
+```bash
+main.py               # رابط کاربری (Tkinter) و منطق اصلی برنامه
+create_moudle.py      # ماژول ساخت QR Code با استفاده از کتابخانه qrcode
+icon.ico              # آیکون رسمی و اختصاصی برنامه
