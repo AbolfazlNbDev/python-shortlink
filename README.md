@@ -11,8 +11,8 @@
   <img src="https://img.shields.io/badge/Tkinter-UI-orange?style=for-the-badge">
   <img src="https://img.shields.io/badge/QR%20Generator-qrcode-black?style=for-the-badge">
   <img src="https://img.shields.io/badge/Windows-Installer-blue?style=for-the-badge&logo=windows">
-  <img src="https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPO?style=for-the-badge">
-  <img src="https://img.shields.io/github/forks/YOUR_USERNAME/YOUR_REPO?style=for-the-badge">
+  <img src="https://img.shields.io/github/stars/AbolfazlNbDev/python-shortlink?style=for-the-badge">
+  <img src="https://img.shields.io/github/forks/AbolfazlNbDev/python-shortlink?style=for-the-badge">
 </p>
 
 <p align="center">
