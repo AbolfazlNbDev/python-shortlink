@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 <h1 align="center">🚀✨ Python ShortLink ✨🚀</h1>
 
 <p align="center">
@@ -123,4 +122,3 @@ https://github.com/AbolfazlNbDev/python-shortlink
 ---
 
 <p align="center"><b>✨ Made with Python & Flask by AbolfazlNbDev ✨</b></p>
-EOF
