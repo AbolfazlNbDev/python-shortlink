@@ -3,7 +3,7 @@
 </p>
 
 <h3 align="center">
-سیستم ساخت QR Code سریع، سبک و حرفه‌ای با Python و Tkinter
+Fast, Lightweight and Professional QR Code Generator built with Python & Tkinter
 </h3>
 
 <p align="center">
@@ -21,63 +21,66 @@
 
 ---
 
-# 🧠 معرفی پروژه
+# 🧠 Project Introduction
 
-**QR Code Creator** یک نرم‌افزار دسکتاپی سریع، سبک و کاربرپسند برای ساخت QR Code از هر متن یا لینک است.
+**QR Code Creator** is a fast, lightweight, and user‑friendly desktop application for generating QR Codes from any text or link.
 
-این برنامه با رابط کاربری ساده و ظاهر جذاب، به شما اجازه می‌دهد:
+With a simple and clean graphical interface, this program allows you to:
 
-- متن یا لینک مورد نظر را وارد کنید  
-- رنگ پس‌زمینه QR را انتخاب کنید  
-- رنگ اصلی QR (بردر) را تنظیم کنید  
-- خروجی را به صورت تصویر باکیفیت ذخیره کنید  
+- Enter any text or URL
+- Choose the background color of the QR Code
+- Customize the main QR color (foreground)
+- Export and save the QR Code as a high‑quality image
 
-هدف اصلی این پروژه، ساخت یک ابزار ساده، تمیز و در عین حال حرفه‌ای برای ساخت QR Code روی ویندوز است.
+The main goal of this project is to create a **simple yet professional tool for generating QR Codes on Windows systems.**
 
 ---
 
-# 📥 دانلود برنامه (فقط از بخش Releases)
+# 📥 Download the Application (From Releases Only)
 
-برای دانلود آخرین نسخه برنامه (فایل exe یا Setup):
+To download the latest version of the application (EXE or Setup file):
 
-👉 **حتماً از بخش Releases گیت‌هاب استفاده کنید:**
+👉 **Please download it from the GitHub Releases section**
 
 ➡️ **[Download From Releases](../../releases)**
 
-> ⚠️ توجه:  
-> - فایل‌های exe / setup داخل سورس قرار داده نشده‌اند.  
-> - فقط در بخش **Releases** منتشر می‌شوند.  
+> ⚠️ Note  
+> - EXE / Setup files are **not included in the source code**.  
+> - They are only published in the **Releases** section.
 
 ---
 
-# ✨ ویژگی‌ها
+# ✨ Features
 
-✅ ساخت QR Code از متن یا لینک  
-✅ انتخاب رنگ پس‌زمینه QR  
-✅ انتخاب رنگ QR (Foreground/Border)  
-✅ ذخیره خودکار تصویر QR در پوشه مخصوص (مثلاً `images`)  
-✅ سرعت بالا و بسیار سبک  
-✅ بدون نیاز به اینترنت  
-✅ مناسب استفاده روی همه سیستم‌های ویندوز  
-✅ دارای آیکون اختصاصی برنامه (`icon.ico`)  
-✅ نسخه نصبی (Installer) حرفه‌ای ساخته شده با Inno Setup  
+✅ Generate QR Codes from text or URLs  
+✅ Custom QR background color  
+✅ Custom QR foreground color  
+✅ Save QR Code as an image automatically  
+✅ High speed and lightweight application  
+✅ No internet connection required  
+✅ Compatible with all Windows systems  
+✅ Custom application icon (`icon.ico`)  
+✅ Professional installer built using **Inno Setup**
 
 ---
 
-# 🏗 نحوه عملکرد سیستم
+# ⚙️ How the System Works
 
 User ➜ GUI (Tkinter) ➜ QR Generator (qrcode) ➜ Output PNG
 
-1. کاربر متن یا لینک را وارد می‌کند  
-2. رنگ‌ها را انتخاب می‌کند  
-3. دکمه ساخت را می‌زند  
-4. ماژول qrcode یک QR Code تولید می‌کند  
-5. فایل نهایی به صورت تصویر ذخیره می‌شود  
+1. The user enters a text or URL  
+2. Selects preferred colors  
+3. Clicks the **Generate** button  
+4. The **qrcode module** generates the QR Code  
+5. The final image is saved as a PNG file  
 
 ---
 
-# 📦 ساختار فایل‌های پروژه
-```bash
-main.py               # رابط کاربری (Tkinter) و منطق اصلی برنامه
-create_moudle.py      # ماژول ساخت QR Code با استفاده از کتابخانه qrcode
-icon.ico              # آیکون رسمی و اختصاصی برنامه
+# 📦 Project File Structure
+
+project/
+│
+├── main.py            # GUI (Tkinter) and main program logic
+├── create_module.py   # QR Code generator module using the qrcode library
+├── icon.ico           # Application icon
+└── images/            # Saved QR Code images
